@@ -6,8 +6,8 @@ RUN [ -f /etc/nginx/conf.d/default.conf ] && rm /etc/nginx/conf.d/default.conf |
 
 COPY conf/nginx.conf /etc/nginx/nginx.conf 
 
-COPY ./tools/fstitou.42.fr.crt /etc/ssl/ 
-COPY ./tools/fstitou.42.fr.key /etc/ssl/
+COPY ./tools/fstitou.42.fr.crt /etc/nginx/ssl/ 
+COPY ./tools/fstitou.42.fr.key /etc/nginx/ssl/
 
 RUN chmod 644 /etc/nginx/nginx.conf
 

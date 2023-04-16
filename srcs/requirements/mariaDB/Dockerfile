@@ -6,11 +6,11 @@ RUN apt-get update && apt-get install -y mariadb-server \
 
 COPY ./tools/mariadb.sh /usr/local/bin/
 
-COPY ./conf/wp.conf /usr/local/bin/
+COPY ./conf/mysqld.conf /usr/local/bin/
 
 RUN chmod +x /usr/local/bin/mariadb.sh
 
-RUN chmod +x /usr/local/bin/wp.conf
+RUN chmod +x /usr/local/bin/mysqld.conf
 
 EXPOSE 3306
 

@@ -2,11 +2,23 @@
 <html>
   <head>
     <title>Welcome to nginx!</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      p {
+        max-width: 80%;
+      }
+    </style>
   </head>
   <body>
     <h1>Welcome to nginx!</h1>
     <p>If you see this page, the nginx web server is successfully installed and working. Further configuration is required.</p>
-    <p>This index is located in <span style="color: rgb(49, 49, 187);">/var/www/html</span> directory.</p>
+    <p>This index is located in <span style="color: rgb(49, 49, 187);">/var/www/html</span> directory of the container.</p>
     <p>The SSL certificate and private key are located in <span style="color: rgb(49, 49, 187);">/srcs/requirements/nginx/tools</span> of the inception directory.</p>
   </body>
 </html>

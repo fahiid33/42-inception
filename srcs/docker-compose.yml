@@ -54,13 +54,13 @@ volumes:
     driver_opts:
       type: none
       o: bind
-      device: /home/$(whoami)/data/wp_db
+      device: /home/fstitou/data/wp_db
   wp_files:
     driver: local
     driver_opts:
       type: none
       o: bind
-      device: /home/$(whoami)/data/wp_files
+      device: /home/fstitou/data/wp_files
 
 networks:
   inception:

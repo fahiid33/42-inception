@@ -1,8 +1,5 @@
 <?php
-define('WP_DEBUG', true);
-define('WP_DEBUG_LOG', true);
-define('WP_DEBUG_DISPLAY', false);
-define( 'DB_NAME', 'mariadb' );
+define( 'DB_NAME', 'wordpress' );
 define( 'DB_USER', 'fstitou' );
 define( 'DB_PASSWORD', 'popo333');
 define( 'DB_HOST', 'mariadb');
@@ -17,7 +14,14 @@ define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
 define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
 define( 'NONCE_SALT',       'put your unique phrase here' );
 $table_prefix = 'wp_';
-define( 'WP_DEBUG', false );
+
+
+define('WP_DEBUG', true);
+define('WP_DEBUG_LOG', true);
+define('WP_DEBUG_DISPLAY', false);
+
+
+
 if ( ! defined( 'ABSPATH' ) ) {
     define( 'ABSPATH', dirname( __FILE__ ) . '/' );
 }

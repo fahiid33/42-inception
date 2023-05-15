@@ -2,8 +2,7 @@ NAME = inception
 
 all : $(NAME)
 
-$(NAME) : 
-	sudo sh -c 'echo "127.0.0.1\tfstitou.42.fr"  >> /etc/hosts'
+$(NAME) :
 	sudo mkdir -p "/home/fstitou/data/wp_db"
 	sudo mkdir -p "/home/fstitou/data/wp_files"
 	docker compose -f ./srcs/docker-compose.yml up --build -d

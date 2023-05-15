@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS wordpress;
+
+CREATE USER IF NOT EXISTS 'fstitou'@'%' IDENTIFIED BY 'popo333';
+
+GRANT ALL PRIVILEGES ON wordpress.* TO 'fstitou'@'%' WITH GRANT OPTION;
+
+FLUSH PRIVILEGES;
+
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'fstitou333';
